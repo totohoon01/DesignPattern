@@ -13,3 +13,8 @@
 - Observable은 대체로 subscribe, unsubscribe, notify로 구성
 - Obsevable에서 구독중인 클래스들로 메시지 일괄 전파
 - 여러가지를 동시에 바꿀때 유용하다.
+
+3. Factory Pattern
+
+- 인터페이스는 미리 결정
+- 인스턴스를 서브 클래스에서 생성
