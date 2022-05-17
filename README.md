@@ -13,6 +13,8 @@
 - Observable은 대체로 subscribe, unsubscribe, notify로 구성
 - Obsevable에서 구독중인 클래스들로 메시지 일괄 전파
 - 여러가지를 동시에 바꿀때 유용하다.
+- 객체간 결합 / 해제 용이
+- 옵저버의 복잡도에 따른 성능 문제 발생가능(구독수)
 
 3. Factory Pattern
 

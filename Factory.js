@@ -6,7 +6,7 @@ class IceAmericano {
     return this.price;
   }
   make() {
-    console.log("Making IceAmericano");
+    console.log("doing sth1");
   }
 }
 
@@ -18,7 +18,7 @@ class Latte {
     return this.price;
   }
   make() {
-    console.log("Making Latte");
+    console.log("doing sth2");
   }
 }
 
@@ -30,28 +30,31 @@ class FlatWhite {
     return this.price;
   }
   make() {
-    console.log("Making FlatWhite");
+    console.log("doing sth3");
   }
 }
 
 class Caffe {
   static makeCoffee(type) {
+    let coffee;
+    console.log(`Making ${type}`);
     if (type == "IceAmericano") {
-      return new IceAmericano();
+      coffee = new IceAmericano();
     }
 
     if (type == "Latte") {
-      return new Latte();
+      coffee = new Latte();
     }
 
     if (type == "FlatWhite") {
-      return new FlatWhite();
+      coffee = new FlatWhite();
     }
+    coffee.make();
+    return coffee;
   }
 }
 
 let latte = Caffe.makeCoffee("Latte");
-latte.make();
 console.log(latte.getPrice());
 
 //자식 클래스에 구현체를 정의하고
